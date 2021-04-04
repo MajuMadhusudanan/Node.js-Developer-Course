@@ -24,8 +24,8 @@ weatherForm.addEventListener('submit', (e) => {
         else {
             //console.log(data.location);
             //console.log(data.forecast);
-            p1.textContent = data.location.location
-            p2.textContent = data.forecast
+            p1.textContent = JSON.stringify(data.location);
+            p2.textContent = JSON.stringify(data.forecast);
         }
        
     })
